@@ -44,7 +44,7 @@ mod reqwest_support {
         {
             let mut url = reqwest::Url::parse(method_url.as_ref()).expect("Unable to parse url");
 
-            let (mut token, not_token): (Vec<(String, String)>, Vec<(String, String)>) = 
+            let (mut token, not_token): (Vec<(String, String)>, Vec<(String, String)>) =
                 params
                     .into_iter()
                     .map(|kv| {
